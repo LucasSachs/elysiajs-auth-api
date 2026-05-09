@@ -4,7 +4,8 @@
   "module": "src/index.js",
   "scripts": {
     "dev": "bun run --watch src/index.ts",
-
+    "build": "bun build --minify-whitespace --minify-syntax --outfile ./dist/index.js src/index.ts",
+    "start": "bun run ./dist/index.js",
     "lint": "biome lint --write",
     "format": "biome format --write"
   },
