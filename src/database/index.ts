@@ -1,3 +1,6 @@
-import { connect } from '@tursodatabase/database';
+import { Database } from '@tursodatabase/database';
+import { drizzle } from 'drizzle-orm/tursodatabase/database';
 
-export const db = await connect('turso.db');
+const client = new Database('turso.db');
+
+export const db = drizzle({ client });
