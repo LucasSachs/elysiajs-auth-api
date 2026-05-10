@@ -1,0 +1,4 @@
+name: development
+variables:
+  - name: apiUrl
+    value: http://localhost:3000

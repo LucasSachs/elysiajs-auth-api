@@ -1,0 +1,11 @@
+opencollection: 1.0.0
+
+info:
+  name: elysiajs-auth-api
+bundled: false
+extensions:
+  bruno:
+    presets:
+      request:
+        type: http
+        url: "{{apiUrl}}/"
