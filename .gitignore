@@ -20,6 +20,9 @@
 *.pem
 dist
 
+# database(turso)
+turso*
+
 # debug
 npm-debug.log*
 yarn-debug.log*

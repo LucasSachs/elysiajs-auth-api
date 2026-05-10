@@ -10,6 +10,7 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@tursodatabase/database": "^0.5.3",
     "elysia": "latest"
   },
   "devDependencies": {
