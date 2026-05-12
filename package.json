@@ -1,6 +1,11 @@
 {
   "name": "bun-api",
   "version": "1.0.0",
+  "author": {
+    "email": "lucassachs1@gmail.com",
+    "name": "Lucas Sachs",
+    "url": "https://www.linkedin.com/in/lucas-sachs-215b87261"
+  },
   "module": "src/index.js",
   "scripts": {
     "dev": "bun run --watch src/app/index.ts",
