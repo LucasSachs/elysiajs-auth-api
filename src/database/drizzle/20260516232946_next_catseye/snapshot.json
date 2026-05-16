@@ -1,7 +1,7 @@
 {
   "version": "7",
   "dialect": "sqlite",
-  "id": "b0c78351-3eac-4fca-b6a1-9163e911ac62",
+  "id": "29c836b2-5a98-4a7d-8a34-b108ae5a7202",
   "prevIds": [
     "00000000-0000-0000-0000-000000000000"
   ],
@@ -47,6 +47,16 @@
       "default": null,
       "generated": null,
       "name": "password",
+      "entityType": "columns",
+      "table": "user"
+    },
+    {
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": "(CURRENT_TIMESTAMP)",
+      "generated": null,
+      "name": "createdAt",
       "entityType": "columns",
       "table": "user"
     },

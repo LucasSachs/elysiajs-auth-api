@@ -41,16 +41,19 @@ examples:
             {
               "id": 1,
               "username": "Lewis.Lucas69",
-              "email": "Alize41@yahoo.com"
+              "email": "Alize41@yahoo.com",
+              "createdAt": "2000-01-01T00:00:00"
             },
             {
               "id": 2,
               "username": "Lucas98",
               "email": "Aylin_Kassulke31@yahoo.com"
+              "createdAt": "2000-01-01T00:00:00"
             },
             {
               "id": 3,
               "username": "Lucas84",
               "email": "Sydney_Rempel@gmail.com"
+              "createdAt": "2000-01-01T00:00:00"
             }
           ]

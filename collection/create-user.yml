@@ -41,6 +41,7 @@ examples:
         type: json
         data: |-
           {
+            "id": 1,
             "username": "Random user",
             "email": "randomUser@email.com",
             "createdAt": "2000-01-01T00:00:00"
