@@ -3,7 +3,7 @@ import 'src/config/secrets/jwt/generator';
 import 'src/database/index';
 
 import { Elysia } from 'elysia';
-import { userController } from './user';
+import { userController } from './user/controller';
 
 async function bootstrap() {
   const app = new Elysia().use(userController).listen(3000);
