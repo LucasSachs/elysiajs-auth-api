@@ -1,0 +1,47 @@
+info:
+  name: (Public) Create a new User
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{apiUrl}}/users"
+  body:
+    type: json
+    data: |-
+      {
+        "username": "",
+        "email": "",
+        "password": ""
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: example
+    description: Creating a random user.
+    request:
+      url: "{{apiUrl}}/users"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "username": "Random User",
+            "email": "randomUser@email.com",
+            "password": "Password@123"
+          }
+    response:
+      status: 201
+      body:
+        type: json
+        data: |-
+          {
+            "username": "Random user",
+            "email": "randomUser@email.com",
+            "createdAt": "2000-01-01T00:00:00"
+          }
