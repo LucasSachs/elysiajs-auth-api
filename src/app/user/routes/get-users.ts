@@ -12,7 +12,13 @@ export const getUsers = new Elysia().get(
     const users = await db
       .select()
       .from(userTable)
-      .where(or(query.username ? like(userTable.username, `%${query.username}%`) : undefined, query.email ? like(userTable.email, `%${query.email}%`) : undefined));
+      .where(
+        or(
+          // biome-ignore format: formatter makes harder to read this, so it is disabled here
+          query.username ? like(userTable.username, `%${query.username}%`) : undefined,
+          query.email ? like(userTable.email, `%${query.email}%`) : undefined,
+        ),
+      );
 
     return status(
       'OK',
