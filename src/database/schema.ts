@@ -6,5 +6,5 @@ export const userTable = sqliteTable('user', {
   username: text().notNull().unique(),
   email: text().notNull().unique(),
   password: text().notNull(),
-  createdAt: int({ mode: 'timestamp' }).notNull().default(sql`(CURRENT_TIMESTAMP)`),
+  createdAt: int({ mode: 'timestamp' }).notNull().default(sql`(unixepoch())`),
 });

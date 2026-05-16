@@ -1,7 +1,7 @@
 {
   "version": "7",
   "dialect": "sqlite",
-  "id": "29c836b2-5a98-4a7d-8a34-b108ae5a7202",
+  "id": "df1c424b-ba9c-4a96-8550-f9cb208091e1",
   "prevIds": [
     "00000000-0000-0000-0000-000000000000"
   ],
@@ -54,7 +54,7 @@
       "type": "integer",
       "notNull": true,
       "autoincrement": false,
-      "default": "(CURRENT_TIMESTAMP)",
+      "default": "(unixepoch())",
       "generated": null,
       "name": "createdAt",
       "entityType": "columns",
