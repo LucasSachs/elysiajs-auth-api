@@ -1,0 +1,56 @@
+info:
+  name: Get Users
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{apiUrl}}/users"
+  params:
+    - name: username
+      value: ""
+      type: query
+      disabled: true
+    - name: email
+      value: ""
+      type: query
+      disabled: true
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: example
+    description: Get all users that haves "lucas" within the username.
+    request:
+      url: "{{apiUrl}}/users?username=lucas"
+      method: GET
+      params:
+        - name: username
+          value: lucas
+          type: query
+    response:
+      status: 200
+      body:
+        type: json
+        data: |-
+          [
+            {
+              "id": 1,
+              "username": "Lewis.Lucas69",
+              "email": "Alize41@yahoo.com"
+            },
+            {
+              "id": 2,
+              "username": "Lucas98",
+              "email": "Aylin_Kassulke31@yahoo.com"
+            },
+            {
+              "id": 3,
+              "username": "Lucas84",
+              "email": "Sydney_Rempel@gmail.com"
+            }
+          ]
